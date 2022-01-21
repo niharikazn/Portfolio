@@ -1,10 +1,13 @@
 <?php
 
-$con=mysqli_init();
+$servername = "sql201.epizy.com";
+$username = "epiz_28613241";
+$password = "AM0WhWDdED1dnnf";
+$dbname = "epiz_28613241_port";
 
-mysqli_real_connect($conn, "humanityy.mysql.database.azure.com", "niharika@humanityy", "12345Niha", "Humanity", 3306);
+
 // Create connection
-//$conn = new mysqli("tcp:humanityser.database.windows.net,1433", $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
