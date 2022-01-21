@@ -1,4 +1,5 @@
 <?php
+header("Location:thankyou3.html");
 $servername = "portfolioniha.database.windows.net";
 $username = "Niharika";
 $password = "Niha14";
