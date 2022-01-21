@@ -1,9 +1,9 @@
 <?php
 
-$servername = "sql201.epizy.com";
-$username = "epiz_28613241";
-$password = "AM0WhWDdED1dnnf";
-$dbname = "epiz_28613241_port";
+$servername = "portfolioniha.database.windows.net";
+$username = "Niharika";
+$password = "Niha14";
+$dbname = "Humanity";
 
 
 // Create connection
