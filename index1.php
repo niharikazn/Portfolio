@@ -1,10 +1,8 @@
 <?php
 
-$servername = "portfolioniha.database.windows.net";
-$username = "Niharika";
-$password = "Niha14";
-$dbname = "Humanity";
-
+$connectionInfo = array("UID" => "Niharika", "pwd" => "Niha1412", "Database" => "Humanity", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+$serverName = "tcp:portfolioniha.database.windows.net,1433";
+$conn = sqlsrv_connect($serverName, $connectionInfo);
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
