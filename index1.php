@@ -1,24 +1,17 @@
 <?php
-
-//$servername = "portfolioniha.database.windows.net";
-//$username = "Niharika";
-//$password = "Niha14";
-//$dbname = "Humanity";
+$servername = "portfolioniha.database.windows.net";
+$username = "Niharika";
+$password = "Niha14";
+$dbname = "Humanity";
 
 
 // Create connection
-//$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
-//if ($conn->connect_error) {
-  //die("Connection failed: " . $conn->connect_error);
-//}
-    $conn = new PDO("sqlsrv:server = tcp:portfolioniha.database.windows.net,1433; Database = Humanity", "Niharika", "Niha1412");
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-// SQL Server Extension Sample Code:
-$connectionInfo = array("UID" => "Niharika", "pwd" => "Niha1412", "Database" => "Humanity", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
-$serverName = "tcp:portfolioniha.database.windows.net,1433";
-$conn = sqlsrv_connect($serverName, $connectionInfo);
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+   
 $name=$_POST["name"];
 $email=$_POST["email"];
 $sub=$_POST["Subject"];
